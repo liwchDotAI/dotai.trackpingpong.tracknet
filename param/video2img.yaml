@@ -1,0 +1,5 @@
+mag: 1.0    # factor to change range of grayscale(default: 1.0)
+sigma: 2.5    # radius of circle generated in heat map(default: 2.5)
+HEIGHT: 288    # height of image input(default: 288)
+WIDTH: 512    # width of image input(default: 512)
+raw_dir: "data/raw_data"

@@ -1,0 +1,22 @@
+tol: 5.0    # acceptable tolerance of heat map circle center between ground truth and prediction(default: 5.0)
+mag: 1.0    # factor to change range of grayscale(default: 1.0)
+sigma: 2.5    # radius of circle generated in heat map(default: 2.5)
+HEIGHT: 288    # height of image input(default: 288)
+WIDTH: 512    # width of image input(default: 512)
+frame_stack: 3    # number of frames to be stacked(default: 3)
+load_weights: "weights/TrackNet"    # path to load pre-trained weights(default: weights/TrackNet)
+video_path: "data/test/test.mp4"    # video path to predict
+label_path: "data/test/test.csv"    # load ground truth csv for predict
+output_path: "output/"    # store predicted data
+save_weights: "weights/saved_weight/TrackNet"    # save weight
+batch_size: 2    # batch size(default: 2)
+pre_trained: false    # whether to load pre-trained model(default: False)
+lr: 1.0    # initial learning rate(default: 1.0)
+match_folder: "data/train_data"    # folder path of images
+epochs: 1    # number of training epochs(default: 50)
+min_delta: 0.0    # minimum delta of loss(default: 0.0)
+patience: 3    # number of epochs with no improvement after which learning rate will be reduced.(default: 3)
+split_ratio: 0.9    # ratio of train-test split(default: train_data/y_data)
+min_lr: 0.01    # minimum learning rate(default: 0.01)
+r_factor: 0.1    # lr reduce factor(default: 0.1)
+

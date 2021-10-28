@@ -1,0 +1,2 @@
+video_path: data/test/test.mp4    # path to the video to be labeled
+csv_path: data/test    # path to store the labeled data
